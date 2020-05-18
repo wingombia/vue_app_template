@@ -15,6 +15,10 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-console.log('Hello World from Webpacker')
-import '../css/application.css'
-import './hello_vue.js'
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
+import '../css/application.css';
+import './hello_vue';
+import './hello_erb.js.erb';
+
+console.log('Hello World from Webpacker');

@@ -5,7 +5,7 @@
 // like app/views/layouts/application.html.erb.
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
 
-/*import Vue from 'vue'
+/* import Vue from 'vue'
 import App from '../app.vue'
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.appendChild(app.$el)
 
   console.log(app)
-})*/
+}) */
 
 
 // The above code uses Vue without the compiler, which means you cannot
@@ -53,20 +53,18 @@ document.addEventListener('DOMContentLoaded', () => {
 //
 // Then uncomment the code block below:
 //
-import TurbolinksAdapter from 'vue-turbolinks'
-import Vue from 'vue/dist/vue.esm'
-import App from '../app.vue'
+import TurbolinksAdapter from 'vue-turbolinks';
+import Vue from 'vue/dist/vue.esm';
+import App from '../app.vue';
 //
-Vue.use(TurbolinksAdapter)
+Vue.use(TurbolinksAdapter);
 //
 document.addEventListener('turbolinks:load', () => {
-   const app = new Vue({
-     el: '#app',
-     data: () => {
-       return {
-         message: "Can you say hello?"
-       }
-     },
-     components: { App }
-   })
-})
+  const app = new Vue({
+    el: '#app',
+    data: () => ({
+      message: 'Can you say hello?',
+    }),
+    components: { App },
+  });
+});
