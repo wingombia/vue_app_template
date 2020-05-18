@@ -21,6 +21,7 @@ import Rails from 'rails-ujs';
 import Turbolinks from 'turbolinks';
 import * as ActiveStorage from 'activestorage';
 import '../css/application.css';
+import '../images/index.js.erb';
 import './hello_vue';
 import './hello_erb.js.erb';
 
