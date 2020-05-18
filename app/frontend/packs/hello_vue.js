@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //
 import TurbolinksAdapter from 'vue-turbolinks';
 import Vue from 'vue/dist/vue.esm';
-import App from '../app.vue';
+import App from '../components/app.vue';
 //
 Vue.use(TurbolinksAdapter);
 //

@@ -17,8 +17,15 @@
 
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
+import Rails from 'rails-ujs';
+import Turbolinks from 'turbolinks';
+import * as ActiveStorage from 'activestorage';
 import '../css/application.css';
 import './hello_vue';
 import './hello_erb.js.erb';
+
+Rails.start();
+Turbolinks.start();
+ActiveStorage.start();
 
 console.log('Hello World from Webpacker');
