@@ -1,7 +1,7 @@
-const purgecss = require("@fullhuman/postcss-purgecss")({
-  content: ["./app/frontend/**/*.css", "./app/frontend/**/*.vue", "./app/views/**/*.html.erb", "./app/helpers/*.rb"],
-  defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
-})
+const purgecss = require('@fullhuman/postcss-purgecss')({
+  content: ['./app/frontend/**/*.css', './app/frontend/**/*.vue', './app/views/**/*.html.erb', './app/helpers/*.rb'],
+  defaultExtractor: (content) => content.match(/[A-Za-z0-9-_:/]+/g) || [],
+});
 
 module.exports = {
   plugins: [
@@ -11,10 +11,10 @@ module.exports = {
     require('autoprefixer'),
     require('postcss-preset-env')({
       autoprefixer: {
-        flexbox: 'no-2009'
+        flexbox: 'no-2009',
       },
-      stage: 3
+      stage: 3,
     }),
-    ...(process.env.NODE_ENV === "production" ? [purgecss] : [])
-  ]
-}
+    ...(process.env.NODE_ENV === 'production' ? [purgecss] : []),
+  ],
+};
