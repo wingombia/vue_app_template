@@ -7,6 +7,19 @@
         "plugin:vue/essential",
         "airbnb-base"
     ],
+    "settings": {
+        "import/resolver": {
+            "alias": {
+            "map": [
+                ["@", "./app/frontend"],
+                ["@components", "./app/frontend/components"]
+            ]
+            },
+            "webpack": {
+                "config": "./config/webpack/environment.js"
+            }
+        }
+    },
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
