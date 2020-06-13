@@ -1,11 +1,13 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "node": true
     },
     "extends": [
+        "eslint:recommended",
         "plugin:vue/essential",
-        "airbnb-base"
+        "plugin:@typescript-eslint/eslint-recommended"
     ],
     "settings": {
         "import/resolver": {
@@ -25,11 +27,13 @@
         "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
-        "ecmaVersion": 11,
+        "ecmaVersion": 2018,
+        "parser": "@typescript-eslint/parser",
         "sourceType": "module"
     },
     "plugins": [
-        "vue"
+        "vue",
+        "@typescript-eslint"
     ],
     "rules": {
     }

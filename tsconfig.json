@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es6", "dom"],
+    "module": "es6",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+        "*": ["node_modules/*", "app/frontend/*"],
+        "@/*": ["app/frontend/*"],
+        "@components/*": ["app/frontend/components/*"],
+    },
+    "sourceMap": true,
+    "target": "es5",
+    "noEmit": true
+  },
+  "files": [
+    "./app/frontend/vue-shims.d.ts"
+  ],
+  "include": [
+    "./app/frontend/**/*.vue",
+    "./app/frontend/**/*.ts",
+  ],
+  "exclude": [
+    "**/*.spec.ts",
+    "node_modules",
+    "vendor",
+    "public"
+  ],
+  "compileOnSave": false,
+  "strict": true,
+}

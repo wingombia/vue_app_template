@@ -4,14 +4,16 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue';
+
+export default Vue.extend({
   data() {
     return {
-      message: 'Hello Vue1!',
+      message: 'Hello Vue1!' as string,
     };
   },
-};
+});
 </script>
 
 <style scoped>
